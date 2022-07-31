@@ -1,0 +1,32 @@
+.calculator {
+    position: relative;
+    transform: translate(87px, 200px);
+    border-radius: 5%;
+    background-color: transparent;
+    height: 100%;
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    column-gap: 10px;
+    row-gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins";
+    text-align: center;
+    color: #a83756;
+}
+.calculator .item {
+    background-color: gainsboro;
+    margin-left: 10px;
+    border-radius: 5%;
+
+}
+.calculator .item .imgs {
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    border-radius:5%;
+    margin-bottom: 10px;
+    line-height: 5px;
+}

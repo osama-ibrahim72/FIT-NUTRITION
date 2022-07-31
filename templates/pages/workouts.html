@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% block contant %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workouts</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}"> 
+    <link rel="stylesheet" href="{% static 'css/workout.css'%}"> 
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+    <div class ="calculator">
+    <div class="item" >
+        <a href="{% url 'armworkouts'%}" ><img class="imgs" src="{% static 'imgs/arm.png' %}" alt="">Arm  Workout</a>
+        
+    </div>
+    
+    
+    <div class="item" >
+        <a href="{% url 'legworkouts' %}"><img class="imgs" src="{% static 'imgs/legs.png' %}" alt="">Legs  Workout</a>
+            
+    </div>
+
+    <div class="item" >
+        <a href="{% url 'backworkouts' %}"><img class="imgs" src="{% static 'imgs/back.png' %}" alt="">Back  Workout</a>
+            
+    </div>
+
+    <div class="item" >
+        <a href="{% url 'shoulderworkouts' %}"><img class="imgs" src="{% static 'imgs/shoulder.png' %}" alt="">Shoulder  Workout</a>
+            
+    </div>
+
+    <div class="item" >
+        <a href="{% url 'chestworkouts' %}"><img class="imgs" src="{% static 'imgs/chest.png' %}" alt="">Chest  Workout</a>
+            
+    </div>
+    
+</div>
+    
+</body>
+</html>
+{% endblock contant %}

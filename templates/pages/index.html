@@ -1,0 +1,69 @@
+{% extends 'base.html'%}
+{% block contant %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROTIEN GYM  | By tefa mod</title>
+    <!-- Font Awesome Icons cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <h3>help for ideal <br> body fitness</h3>
+                <p>Building your muscles isn't about being better than anyone else, it's about being better than you were.Do today what others will not do, to do tomorrow what others cannot do.</p>
+                <a href="#landing-content"><button class="btn">Get started</button></a>
+                <a href="https://drive.google.com/file/d/18S-XlvwRSLqFm0Jv-EA2tRCS3Tm5Q2ON/view?usp=sharing"><button class="cal btn">Download App</button></a>
+            </div>
+            <div class="home-image">
+                <br></br>
+                <br></br>
+            </div>
+        </div>
+    </div>
+    <div id="landing-content" class="landing">
+        <a href="{% url 'workouts'%}">
+        <div class="item">
+            <i class="fas fa-bicycle"></i>
+            <div>Excercises</div>
+            <p>The only exercise you should regret is an exercise you didn't do
+                Willpower is like the muscles of the body, the more you train and exercise it,  it becomes stronger</p>
+        </div>
+        </a >
+        <a href = "https://drive.google.com/file/d/18S-XlvwRSLqFm0Jv-EA2tRCS3Tm5Q2ON/view?usp=sharing">
+        <div class="item">
+            <i class="fa-solid fa-calculator"></i>
+            <div>Calculator</div>
+            <p>I won't tell you the road will be easy, but the results are worth.
+                a year from now you'll be so glad you started today.<br> Download app now!!</p>
+        </div>
+        </a>
+        <a href="{% url 'food'%}">
+        <div class="item">
+            <i class="fas fa-heartbeat"></i>
+            <div>Health & food</div>
+            <p>Your practice of a new sport, you gain useful habits
+                You can challenge the sound of your stomach and mind to overcome eating food that does not benefit you and replace it with useful food that does not increase your weight</p>
+        </div>
+        </a>
+        <a href="mailto:joeshwoa.george@gmail.com?subject=Welcome To Our Gym">
+        <div class="item">
+            <i class="fa-solid fa-phone"></i>
+            <div>Contact Us</div>
+            <p>For orders and inquiries, please contact us through...</p>
+            <p></p>
+        </div>
+        </a>
+        
+        
+    </div>
+    
+    
+</body>
+</html>
+{% endblock contant %}

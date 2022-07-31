@@ -1,0 +1,51 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="{%static 'css/normalize.css'%}">
+    <!-- Main Template Css File -->
+    <link rel="stylesheet" href="{% static 'css/calc.css' %}">
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{%static 'css/all.min.css'%}">
+</head>
+<body>
+    <header class="header">
+        
+        
+            <img  class="logo" src="{% static 'img/logo-removebg-preview.png' %}" alt="">
+        
+        <nav class="navbar">
+            
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Pricing</a>
+            <a href="#">Excercises</a>
+            <a href="#">|</a>
+            <a href="#">Login</a>
+            <a href="#" class="btn">Sign Up</a>
+        </nav>
+    </header>
+    <section class="calculator" >
+        <img src="{%static 'img/istockphoto-1208592710-612x612.jpg'%}" alt="">
+        <div class="new-meal">
+            <div>Weight: 0 gram</div>
+            <div>Calories: 0 Calories</div>
+            <div>Carb: 0 gram</div>
+            <div>Fat: 0 gram</div>
+            <div>Protein: 0 gram</div>
+            <button class="new-btn">New Meal</button>
+        </div>
+    </section>
+
+</body>
+</html>
